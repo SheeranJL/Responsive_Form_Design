@@ -5,10 +5,6 @@
   font-size: 14px;
 }
 
-div, input, select {
-
-}
-
 body {
   padding: 0;
   margin: 0;
@@ -43,6 +39,10 @@ input[type="text"],
   text-align: left;
 }
 
+select {
+  background-color: rgba(235, 236, 236)
+}
+
 #postcode {
     height: 50px;
     width: 50%;
@@ -55,11 +55,10 @@ input[type="text"],
   border: 2px solid purple;
 }
 
-label[for="css-checkbox"],
-[for="html-checkbox"],
-[for="javascript-news"] {
-  padding-left: 10px;
-  padding-bottom: 20px;
+
+
+input[type="radio"] {
+  justify-content: center;
 }
 
 select[name="user-state"] {
@@ -89,7 +88,7 @@ header h1 {
   font-size: 22px;
 }
 
-footer, p {
+.footer {
   font-style: italic;
   text-align: center;
 }
@@ -113,7 +112,7 @@ input[type="text"]::placeholder {
 
 .top-section {
   margin-bottom: 15px;
-  border-bottom: 2px solid black;
+  border-bottom: 4px solid black;
   margin-left: 7%;
   margin-right: 7%;
 }
@@ -151,8 +150,19 @@ input[type="text"]::placeholder {
 .newsletter-text-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
+label[for="radio-html"],
+[for="radio-text"],
+[for="html-checkbox"],
+[for="css-checkbox"],
+[for="javascript-news"] {
+  padding-left: 10px;
+  padding-bottom: 5px;
+  align-items: center;
+  padding-top: 5px;
+}
 
 .postcode-container {
   padding-bottom: 1em;
@@ -175,7 +185,7 @@ input[type="text"]::placeholder {
 }
 
 .legend {
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 1.3em;
   padding-top: 10px;
 }
@@ -192,6 +202,11 @@ input[type="text"]::placeholder {
 }
 
 .button:hover {
+  cursor: pointer;
+  border: 2px solid purple;
+}
+
+.button:focus {
   cursor: pointer;
   border: 2px solid purple;
 }
