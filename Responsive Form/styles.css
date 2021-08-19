@@ -185,12 +185,16 @@ input[type="text"]::placeholder {
   .phone-number-container,
   .street-address-container,
   .city-container,
-  .state-container,
-  .postcode-container {
+  .state-container {
     display: flex;
     flex-direction: row;
     margin-top: 1em;
     margin-left: 0;
+  }
+
+  .postcode-container {
+    display: flex;
+    flex-direction: row;
   }
 
   label {
