@@ -1,0 +1,223 @@
+/* Selectors */
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+}
+
+div, input, select {
+
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: block;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  width: 100%;
+  padding-top: 5px;
+  border-top: 1px solid white;
+}
+
+fieldset {
+  border: none;
+}
+
+input[type="text"],
+[type="email"],
+[type="tel"]{
+  height: 50px;
+  width: 100%;
+  background-color: rgba(235, 236, 236);
+  border: none;
+  text-align: left;
+}
+
+#postcode {
+    height: 50px;
+    width: 50%;
+    background-color: rgba(235, 236, 236);
+    border: none;
+}
+
+label[for="css-checkbox"],
+[for="html-checkbox"],
+[for="javascript-news"] {
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+select[name="user-state"] {
+  height: 50px;
+  width: 100%;
+}
+
+label {
+  padding-bottom: 10px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+input {
+  border-top-left-radius: 3%;
+}
+input:focus, textarea:focus, select:focus{
+  border: 2px solid purple;
+}
+
+
+textarea {
+  background-color: rgba(235, 236, 236);
+  border: none;
+  width: 100%;
+  height: 100px;
+}
+
+footer, p {
+  font-style: italic;
+  text-align: center;
+}
+
+p {
+  text-align: left;
+}
+
+input[type="email"]::placeholder {
+  text-align: right;
+}
+
+input[type="text"]::placeholder {
+  text-align: right;
+}
+/* Classes & # */
+
+.top-form-container {
+  border: none;
+}
+
+.first-fieldset {
+  border-bottom: 2px solid black;
+
+}
+
+.second-fieldset {
+  margin-top: 1em;
+}
+
+.full-name-container,
+.email-address-container,
+.phone-number-container,
+.street-address-container,
+.city-container,
+.state-container,
+.postcode-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.html-checkbox-container,
+.css-checkbox-container,
+.javascript-checkbox-container,
+.newsletter-html-container,
+.newsletter-text-container {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.postcode-container {
+  padding-bottom: 1em;
+}
+
+
+
+.sign-up-para {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 0;
+}
+
+.heading-2 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1em;
+  margin-top: 0.6em;
+}
+
+.legend {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.button {
+  height: 50px;
+  width: 100%;
+  background-color: #22C8A7;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+.footer {
+  text-align: center;
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width:768px) {
+  .full-name-container,
+  .email-address-container,
+  .phone-number-container,
+  .street-address-container,
+  .city-container,
+  .state-container,
+  .postcode-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    margin-left: 0;
+  }
+
+  label {
+    width: 20%;
+  }
+
+  .top-section {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .top-form-container {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  label {
+    width: 30%;
+    padding-top: 5px;
+    align-self: center;
+  }
+
+  #postcode {
+      height: 50px;
+      width: 50%;
+      background-color: rgba(235, 236, 236);
+      border: none;
+  }
+
+}
