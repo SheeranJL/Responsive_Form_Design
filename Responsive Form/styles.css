@@ -48,7 +48,6 @@ select {
     width: 50%;
     background-color: rgba(235, 236, 236);
     border: none;
-    border:
 }
 
 #postcode:focus {
@@ -82,6 +81,7 @@ textarea {
   border: none;
   width: 100%;
   height: 100px;
+  margin-top: 10px;
 }
 
 header h1 {
@@ -104,6 +104,11 @@ input[type="email"]::placeholder {
 input[type="text"]::placeholder {
   text-align: right;
 }
+
+input, placeholder {
+  padding-right: 20px;
+}
+
 /* Classes & # */
 
 .top-form-container {
@@ -131,26 +136,17 @@ input[type="text"]::placeholder {
   margin-right: 7%;
 }
 
-.full-name-container,
-.email-address-container,
-.phone-number-container,
-.street-address-container,
-.city-container,
-.state-container,
-.postcode-container {
+.top-content-container {
   display: flex;
   flex-direction: column;
   margin-top: 1em;
 }
 
-.html-checkbox-container,
-.css-checkbox-container,
-.javascript-checkbox-container,
-.newsletter-html-container,
-.newsletter-text-container {
+.bottom-content-container {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 label[for="radio-html"],
@@ -164,11 +160,9 @@ label[for="radio-html"],
   padding-top: 5px;
 }
 
-.postcode-container {
-  padding-bottom: 1em;
+.postcode-class {
+  margin-bottom: 2em;
 }
-
-
 
 .sign-up-para {
   text-align: center;
@@ -215,17 +209,15 @@ label[for="radio-html"],
   text-align: center;
 }
 
+.textarea-label {
+  padding-bottom: 10px;
+}
+
 
 /* Media Queries */
 
 @media screen and (min-width:768px) {
-  .full-name-container,
-  .email-address-container,
-  .phone-number-container,
-  .street-address-container,
-  .city-container,
-  .state-container,
-  .postcode-container {
+  .top-content-container {
     flex-direction: row;
     margin-top: 1em;
     margin-left: 0;
