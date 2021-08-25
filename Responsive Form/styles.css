@@ -51,7 +51,7 @@ select {
 }
 
 #postcode:focus {
-  border: 2px solid purple;
+  outline: 2px solid purple;
 }
 
 
@@ -72,7 +72,7 @@ label {
 }
 
 input:focus, textarea:focus, select:focus{
-  border: 2px solid purple;
+  outline: 2px solid purple;
 }
 
 
@@ -202,7 +202,7 @@ label[for="radio-html"],
 
 .button:focus {
   cursor: pointer;
-  border: 2px solid purple;
+  outline: 2px solid purple;
 }
 
 .footer {
